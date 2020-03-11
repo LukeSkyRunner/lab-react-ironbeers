@@ -1,0 +1,14 @@
+.beer__single{
+ display: list-item;
+ flex-direction: row;
+ 
+}
+
+.beer__single__image img{
+  max-width: 300px;
+  max-height: 250px;
+}
+
+.beer__single__description {
+ display: flex;
+}

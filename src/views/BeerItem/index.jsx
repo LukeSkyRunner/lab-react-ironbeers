@@ -34,10 +34,12 @@ class BeerItem extends Component {
         {(beer && (
           <Fragment>
             <figure className="beer__single__image">
-              <img src={beer.image} alt={beer.name} />
+              <img src={beer.image_url} alt={beer.name} />
             </figure>
             <div className="beer__single__description">
-              <h1>{beer.name}</h1>
+              <h3>{beer.name}</h3>
+              <p>{beer.tagline}</p>
+              <p><strong>Created By:</strong>{beer.contributed_by}</p>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae illum quod sequi
                 suscipit possimus nesciunt hic minus inventore distinctio iure!
